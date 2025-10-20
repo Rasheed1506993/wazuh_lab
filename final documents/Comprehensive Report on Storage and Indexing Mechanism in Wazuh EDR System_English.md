@@ -1131,7 +1131,7 @@ sequenceDiagram
 
 ### 9.3 Component/Architecture Diagram
 
-```
+```mermaid
 graph TB
     subgraph DP["DATA PRODUCERS"]
         Agent["Wazuh Agent<br/>(Hosts)"]
