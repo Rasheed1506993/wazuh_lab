@@ -1,0 +1,160 @@
+<svg viewBox="0 0 900 950" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#2C3E50">
+    الأمان والصيانة في Wazuh Indexer
+  </text>
+  
+  <!-- Security Layer -->
+  <rect x="50" y="70" width="800" height="270" fill="#E74C3C" fill-opacity="0.08" stroke="#E74C3C" stroke-width="3" rx="10"/>
+  <text x="450" y="95" text-anchor="middle" font-size="19" font-weight="bold" fill="#C0392B">
+    طبقات الأمان (Security Layers)
+  </text>
+  
+  <!-- Encryption -->
+  <rect x="80" y="115" width="370" height="100" fill="#C0392B" fill-opacity="0.15" stroke="#C0392B" stroke-width="2" rx="8"/>
+  <text x="265" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21">
+    التشفير وإدارة الشهادات
+  </text>
+  <text x="100" y="160" font-size="11" fill="#2C3E50">
+    • HTTPS إلزامي لجميع الاتصالات (TLS 1.2+)
+  </text>
+  <text x="100" y="178" font-size="11" fill="#2C3E50">
+    • شهادات X.509 في: /etc/wazuh-indexer/certs/
+  </text>
+  <text x="100" y="196" font-size="11" fill="#2C3E50">
+    • دعم المصادقة المتبادلة (Mutual TLS)
+  </text>
+  
+  <!-- Authentication -->
+  <rect x="470" y="115" width="360" height="100" fill="#C0392B" fill-opacity="0.15" stroke="#C0392B" stroke-width="2" rx="8"/>
+  <text x="650" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21">
+    إدارة الهوية والصلاحيات
+  </text>
+  <text x="490" y="160" font-size="11" fill="#2C3E50">
+    • نموذج RBAC (Role-Based Access Control)
+  </text>
+  <text x="490" y="178" font-size="11" fill="#2C3E50">
+    • تشفير كلمات المرور بـ bcrypt
+  </text>
+  <text x="490" y="196" font-size="11" fill="#2C3E50">
+    • التكامل مع LDAP/SAML/OpenID Connect
+  </text>
+  
+  <!-- Data Protection -->
+  <rect x="80" y="230" width="740" height="95" fill="#C0392B" fill-opacity="0.15" stroke="#C0392B" stroke-width="2" rx="8"/>
+  <text x="450" y="253" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21">
+    حماية البيانات
+  </text>
+  <text x="100" y="275" font-size="11" fill="#2C3E50">
+    أثناء النقل: تشفير TLS لجميع الاتصالات (خارجية وداخلية بين العقد)
+  </text>
+  <text x="100" y="293" font-size="11" fill="#2C3E50">
+    عند التخزين: تشفير اختياري على مستوى القرص (LUKS/BitLocker)
+  </text>
+  <text x="100" y="311" font-size="11" fill="#2C3E50">
+    الموقع: /var/lib/wazuh-indexer/nodes/0/indices
+  </text>
+  
+  <!-- Monitoring Section -->
+  <rect x="50" y="370" width="800" height="240" fill="#3498DB" fill-opacity="0.08" stroke="#3498DB" stroke-width="3" rx="10"/>
+  <text x="450" y="395" text-anchor="middle" font-size="19" font-weight="bold" fill="#2980B9">
+    المراقبة والصيانة (Monitoring & Maintenance)
+  </text>
+  
+  <!-- Health Monitoring -->
+  <rect x="80" y="415" width="370" height="180" fill="#2980B9" fill-opacity="0.15" stroke="#2980B9" stroke-width="2" rx="8"/>
+  <text x="265" y="438" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F618D">
+    مراقبة صحة النظام
+  </text>
+  <text x="100" y="460" font-size="11" fill="#2C3E50" font-weight="bold">
+    واجهة /_cluster/health
+  </text>
+  <text x="110" y="478" font-size="10" fill="#27AE60">
+    • أخضر: جميع الشاردز نشطة
+  </text>
+  <text x="110" y="495" font-size="10" fill="#F39C12">
+    • أصفر: بعض النسخ المتماثلة غير متوفرة
+  </text>
+  <text x="110" y="512" font-size="10" fill="#E74C3C">
+    • أحمر: بعض الشاردز الأساسية غير متوفرة
+  </text>
+  
+  <text x="100" y="535" font-size="11" fill="#2C3E50" font-weight="bold">
+    واجهة /_nodes/stats
+  </text>
+  <text x="110" y="553" font-size="10" fill="#2C3E50">
+    استخدام الذاكرة، المعالج، القرص، الشبكة
+  </text>
+  <text x="100" y="575" font-size="10" fill="#C0392B">
+    ⚠ تنبيه عند استخدام القرص &gt; 80%
+  </text>
+  
+  <!-- Index Management -->
+  <rect x="470" y="415" width="360" height="180" fill="#2980B9" fill-opacity="0.15" stroke="#2980B9" stroke-width="2" rx="8"/>
+  <text x="650" y="438" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F618D">
+    إدارة دورة حياة الفهارس
+  </text>
+  <text x="490" y="460" font-size="11" fill="#2C3E50">
+    سياسات الاحتفاظ بالبيانات:
+  </text>
+  <text x="500" y="480" font-size="10" fill="#2C3E50">
+    • wazuh-alerts-*: 90 يوم (موصى به)
+  </text>
+  <text x="500" y="497" font-size="10" fill="#2C3E50">
+    • wazuh-monitoring-*: 30 يوم
+  </text>
+  <text x="500" y="514" font-size="10" fill="#2C3E50">
+    • wazuh-statistics-*: 30 يوم
+  </text>
+  <text x="500" y="531" font-size="10" fill="#2C3E50">
+    • wazuh-states-inventory-*: 30 يوم
+  </text>
+  
+  <text x="490" y="555" font-size="11" fill="#2C3E50">
+    الحذف التلقائي عبر مهام مجدولة
+  </text>
+  <text x="490" y="575" font-size="10" fill="#2C3E50">
+    DELETE /wazuh-alerts-*/_doc/_query
+  </text>
+  
+  <!-- Backup Section -->
+  <rect x="50" y="640" width="800" height="180" fill="#9B59B6" fill-opacity="0.08" stroke="#9B59B6" stroke-width="3" rx="10"/>
+  <text x="450" y="665" text-anchor="middle" font-size="19" font-weight="bold" fill="#8E44AD">
+    النسخ الاحتياطي والاستعادة (Backup & Recovery)
+  </text>
+  
+  <!-- Snapshots -->
+  <rect x="80" y="685" width="740" height="120" fill="#8E44AD" fill-opacity="0.15" stroke="#8E44AD" stroke-width="2" rx="8"/>
+  <text x="450" y="708" text-anchor="middle" font-size="15" font-weight="bold" fill="#6C3483">
+    آلية اللقطات (Snapshots)
+  </text>
+  
+  <text x="100" y="730" font-size="11" fill="#2C3E50">
+    ١. إنشاء مستودع للقطات (Repository):
+  </text>
+  <text x="115" y="748" font-size="10" fill="#2C3E50">
+    PUT /_snapshot/backup_repo {"type": "fs", "settings": {"location": "/backup/wazuh-indexer"}}
+  </text>
+  
+  <text x="100" y="770" font-size="11" fill="#2C3E50">
+    ٢. إنشاء لقطة:
+  </text>
+  <text x="115" y="788" font-size="10" fill="#2C3E50">
+    PUT /_snapshot/backup_repo/snapshot_1?wait_for_completion=true
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="50" y="850" width="800" height="85" fill="#16A085" fill-opacity="0.1" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="450" y="873" text-anchor="middle" font-size="16" font-weight="bold" fill="#138D75">
+    أفضل ممارسات الصيانة
+  </text>
+  <text x="70" y="895" font-size="11" fill="#2C3E50">
+    • مراقبة السجلات في: /var/log/wazuh-indexer/wazuh-indexer.log
+  </text>
+  <text x="70" y="913" font-size="11" fill="#2C3E50">
+    • نسخ احتياطي يومي للفهارس الحرجة، أسبوعي للفهارس الأخرى
+  </text>
+  <text x="70" y="931" font-size="11" fill="#2C3E50">
+    • مراجعة دورية للصلاحيات والمستخدمين، تحديث الشهادات قبل انتهائها
+  </text>
+</svg>

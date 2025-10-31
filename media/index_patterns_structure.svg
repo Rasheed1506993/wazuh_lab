@@ -1,0 +1,197 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#2C3E50">
+    أنماط الفهارس ووظائفها في Wazuh Indexer
+  </text>
+  
+  <!-- Alert Indices -->
+  <rect x="50" y="70" width="380" height="130" fill="#E74C3C" fill-opacity="0.15" stroke="#E74C3C" stroke-width="3" rx="10"/>
+  <text x="240" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#C0392B">
+    wazuh-alerts-*
+  </text>
+  <text x="80" y="120" font-size="13" fill="#2C3E50">
+    • التنبيهات الأمنية المُنشأة من القواعد
+  </text>
+  <text x="80" y="140" font-size="13" fill="#2C3E50">
+    • يتم إنشاء فهرس يومي جديد
+  </text>
+  <text x="80" y="160" font-size="13" fill="#2C3E50">
+    • مثال: wazuh-alerts-4.x-2025.10.31
+  </text>
+  <text x="80" y="180" font-size="13" fill="#2C3E50">
+    • المصدر: /var/ossec/logs/alerts/alerts.json
+  </text>
+  
+  <!-- Archive Indices -->
+  <rect x="470" y="70" width="380" height="130" fill="#F39C12" fill-opacity="0.15" stroke="#F39C12" stroke-width="3" rx="10"/>
+  <text x="660" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#D68910">
+    wazuh-archives-*
+  </text>
+  <text x="500" y="120" font-size="13" fill="#2C3E50">
+    • جميع الأحداث المُستقبلة (اختياري)
+  </text>
+  <text x="500" y="140" font-size="13" fill="#2C3E50">
+    • يتطلب تفعيل &lt;logall_json&gt;yes&lt;/logall_json&gt;
+  </text>
+  <text x="500" y="160" font-size="13" fill="#2C3E50">
+    • مفيد للامتثال والتحليلات اللاحقة
+  </text>
+  <text x="500" y="180" font-size="13" fill="#2C3E50">
+    • يزيد من متطلبات التخزين بشكل كبير
+  </text>
+  
+  <!-- Monitoring Indices -->
+  <rect x="50" y="230" width="380" height="130" fill="#3498DB" fill-opacity="0.15" stroke="#3498DB" stroke-width="3" rx="10"/>
+  <text x="240" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="#2980B9">
+    wazuh-monitoring-*
+  </text>
+  <text x="80" y="280" font-size="13" fill="#2C3E50">
+    • حالة اتصال وكلاء Wazuh
+  </text>
+  <text x="80" y="300" font-size="13" fill="#2C3E50">
+    • تسجيل كل 15 دقيقة (افتراضياً)
+  </text>
+  <text x="80" y="320" font-size="13" fill="#2C3E50">
+    • يتم إنشاء فهرس أسبوعي
+  </text>
+  <text x="80" y="340" font-size="13" fill="#2C3E50">
+    • الحالات: نشط، غير متصل، معلق
+  </text>
+  
+  <!-- Statistics Indices -->
+  <rect x="470" y="230" width="380" height="130" fill="#9B59B6" fill-opacity="0.15" stroke="#9B59B6" stroke-width="3" rx="10"/>
+  <text x="660" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="#8E44AD">
+    wazuh-statistics-*
+  </text>
+  <text x="500" y="280" font-size="13" fill="#2C3E50">
+    • إحصائيات أداء خادم Wazuh
+  </text>
+  <text x="500" y="300" font-size="13" fill="#2C3E50">
+    • عدد الأحداث المُعالجة والمُسقطة
+  </text>
+  <text x="500" y="320" font-size="13" fill="#2C3E50">
+    • البايتات المُستقبلة وجلسات TCP
+  </text>
+  <text x="500" y="340" font-size="13" fill="#2C3E50">
+    • تحديث كل 5 دقائق، فهرس أسبوعي
+  </text>
+  
+  <!-- Vulnerabilities Indices -->
+  <rect x="50" y="390" width="800" height="100" fill="#E67E22" fill-opacity="0.15" stroke="#E67E22" stroke-width="3" rx="10"/>
+  <text x="450" y="415" text-anchor="middle" font-size="16" font-weight="bold" fill="#CA6F1E">
+    wazuh-states-vulnerabilities-*
+  </text>
+  <text x="80" y="440" font-size="13" fill="#2C3E50">
+    • الثغرات الأمنية المكتشفة في الأنظمة المراقبة
+  </text>
+  <text x="80" y="460" font-size="13" fill="#2C3E50">
+    • تفاصيل: مستوى الخطورة، الحالة، البرمجيات المتأثرة، مراجع CVE
+  </text>
+  <text x="80" y="480" font-size="13" fill="#2C3E50">
+    • يُستخدم في وحدة كشف الثغرات والتقارير الأمنية
+  </text>
+  
+  <!-- Inventory Title -->
+  <text x="450" y="525" text-anchor="middle" font-size="18" font-weight="bold" fill="#16A085">
+    فهارس الجرد (Inventory Indices)
+  </text>
+  
+  <!-- Hardware Inventory -->
+  <rect x="50" y="550" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="175" y="572" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-hardware-*
+  </text>
+  <text x="75" y="595" font-size="12" fill="#2C3E50">
+    معلومات المكونات المادية
+  </text>
+  <text x="75" y="612" font-size="12" fill="#2C3E50">
+    (CPU، الذاكرة)
+  </text>
+  <text x="75" y="629" font-size="12" fill="#2C3E50">
+    موقع: IT Hygiene → Hardware
+  </text>
+  
+  <!-- Packages Inventory -->
+  <rect x="325" y="550" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="450" y="572" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-packages-*
+  </text>
+  <text x="350" y="595" font-size="12" fill="#2C3E50">
+    البرمجيات المثبتة
+  </text>
+  <text x="350" y="612" font-size="12" fill="#2C3E50">
+    (الاسم، الإصدار، البائع)
+  </text>
+  <text x="350" y="629" font-size="12" fill="#2C3E50">
+    موقع: IT Hygiene → Packages
+  </text>
+  
+  <!-- Processes Inventory -->
+  <rect x="600" y="550" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="725" y="572" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-processes-*
+  </text>
+  <text x="625" y="595" font-size="12" fill="#2C3E50">
+    العمليات الجارية
+  </text>
+  <text x="625" y="612" font-size="12" fill="#2C3E50">
+    (الاسم، PID، المستخدم)
+  </text>
+  <text x="625" y="629" font-size="12" fill="#2C3E50">
+    موقع: IT Hygiene → Processes
+  </text>
+  
+  <!-- Ports Inventory -->
+  <rect x="50" y="660" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="175" y="682" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-ports-*
+  </text>
+  <text x="75" y="705" font-size="12" fill="#2C3E50">
+    المنافذ الشبكية المفتوحة
+  </text>
+  <text x="75" y="722" font-size="12" fill="#2C3E50">
+    (رقم المنفذ، الخدمة)
+  </text>
+  <text x="75" y="739" font-size="12" fill="#2C3E50">
+    موقع: IT Hygiene → Traffic
+  </text>
+  
+  <!-- Interfaces Inventory -->
+  <rect x="325" y="660" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="450" y="682" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-interfaces-*
+  </text>
+  <text x="350" y="705" font-size="12" fill="#2C3E50">
+    واجهات الشبكة
+  </text>
+  <text x="350" y="722" font-size="12" fill="#2C3E50">
+    (الحالة، MAC، الإحصائيات)
+  </text>
+  <text x="350" y="739" font-size="12" fill="#2C3E50">
+    موقع: IT Hygiene → Interfaces
+  </text>
+  
+  <!-- System Inventory -->
+  <rect x="600" y="660" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="725" y="682" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-system-*
+  </text>
+  <text x="625" y="705" font-size="12" fill="#2C3E50">
+    معلومات النظام
+  </text>
+  <text x="625" y="722" font-size="12" fill="#2C3E50">
+    (نظام التشغيل، المعمارية)
+  </text>
+  <text x="625" y="739" font-size="12" fill="#2C3E50">
+    موقع: IT Hygiene → OS
+  </text>
+  
+  <!-- Note box -->
+  <rect x="50" y="770" width="800" height="60" fill="#ECF0F1" stroke="#34495E" stroke-width="2" rx="8"/>
+  <text x="450" y="795" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C3E50">
+    ملاحظات هامة
+  </text>
+  <text x="70" y="815" font-size="12" fill="#2C3E50">
+    • الرمز * يسمح بإنشاء فهارس متعددة بناءً على الزمن أو عوامل أخرى
+  </text>
+</svg>

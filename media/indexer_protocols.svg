@@ -1,0 +1,169 @@
+<svg viewBox="0 0 850 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="425" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#2C3E50">
+    البروتوكولات والتقنيات المستخدمة في Wazuh Indexer
+  </text>
+  
+  <!-- Security Layer -->
+  <rect x="50" y="70" width="750" height="150" fill="#E74C3C" fill-opacity="0.1" stroke="#E74C3C" stroke-width="3" rx="10"/>
+  <text x="425" y="95" text-anchor="middle" font-size="18" font-weight="bold" fill="#E74C3C">
+    طبقة الأمان والتشفير
+  </text>
+  
+  <rect x="80" y="110" width="200" height="90" fill="#C0392B" stroke="#922B21" stroke-width="2" rx="8"/>
+  <text x="180" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    HTTPS/TLS
+  </text>
+  <text x="180" y="155" text-anchor="middle" font-size="11" fill="white">
+    • TLS 1.2+ مطلوب
+  </text>
+  <text x="180" y="172" text-anchor="middle" font-size="11" fill="white">
+    • شهادات X.509
+  </text>
+  <text x="180" y="189" text-anchor="middle" font-size="11" fill="white">
+    • المنفذ: 9200
+  </text>
+  
+  <rect x="310" y="110" width="220" height="90" fill="#C0392B" stroke="#922B21" stroke-width="2" rx="8"/>
+  <text x="420" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    المصادقة والتفويض
+  </text>
+  <text x="420" y="155" text-anchor="middle" font-size="11" fill="white">
+    • مستخدمين وكلمات مرور
+  </text>
+  <text x="420" y="172" text-anchor="middle" font-size="11" fill="white">
+    • إدارة الأدوار (RBAC)
+  </text>
+  <text x="420" y="189" text-anchor="middle" font-size="11" fill="white">
+    • صلاحيات على مستوى الفهرس
+  </text>
+  
+  <rect x="560" y="110" width="210" height="90" fill="#C0392B" stroke="#922B21" stroke-width="2" rx="8"/>
+  <text x="665" y="135" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    تشفير البيانات
+  </text>
+  <text x="665" y="155" text-anchor="middle" font-size="11" fill="white">
+    • أثناء النقل (TLS)
+  </text>
+  <text x="665" y="172" text-anchor="middle" font-size="11" fill="white">
+    • عند التخزين (اختياري)
+  </text>
+  <text x="665" y="189" text-anchor="middle" font-size="11" fill="white">
+    • تشفير الاتصالات الداخلية
+  </text>
+  
+  <!-- API Layer -->
+  <rect x="50" y="250" width="750" height="130" fill="#3498DB" fill-opacity="0.1" stroke="#3498DB" stroke-width="3" rx="10"/>
+  <text x="425" y="275" text-anchor="middle" font-size="18" font-weight="bold" fill="#3498DB">
+    طبقة الواجهات البرمجية
+  </text>
+  
+  <rect x="80" y="290" width="320" height="70" fill="#2980B9" stroke="#1F618D" stroke-width="2" rx="8"/>
+  <text x="240" y="315" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    REST API
+  </text>
+  <text x="240" y="335" text-anchor="middle" font-size="11" fill="white">
+    GET, POST, PUT, DELETE
+  </text>
+  <text x="240" y="352" text-anchor="middle" font-size="11" fill="white">
+    JSON Request/Response
+  </text>
+  
+  <rect x="430" y="290" width="340" height="70" fill="#2980B9" stroke="#1F618D" stroke-width="2" rx="8"/>
+  <text x="600" y="315" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    عمليات API الرئيسية
+  </text>
+  <text x="600" y="335" text-anchor="middle" font-size="11" fill="white">
+    /_search, /_bulk, /_reindex, /_cat/indices
+  </text>
+  <text x="600" y="352" text-anchor="middle" font-size="11" fill="white">
+    /_cluster/health, /_nodes/stats
+  </text>
+  
+  <!-- Data Processing -->
+  <rect x="50" y="410" width="750" height="160" fill="#9B59B6" fill-opacity="0.1" stroke="#9B59B6" stroke-width="3" rx="10"/>
+  <text x="425" y="435" text-anchor="middle" font-size="18" font-weight="bold" fill="#9B59B6">
+    طبقة معالجة البيانات
+  </text>
+  
+  <rect x="80" y="450" width="200" height="100" fill="#8E44AD" stroke="#6C3483" stroke-width="2" rx="8"/>
+  <text x="180" y="475" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    JSON Documents
+  </text>
+  <text x="180" y="495" text-anchor="middle" font-size="11" fill="white">
+    • بنية مُهيكلة
+  </text>
+  <text x="180" y="512" text-anchor="middle" font-size="11" fill="white">
+    • حقول ديناميكية
+  </text>
+  <text x="180" y="529" text-anchor="middle" font-size="11" fill="white">
+    • دعم الأنواع المتعددة
+  </text>
+  
+  <rect x="305" y="450" width="220" height="100" fill="#8E44AD" stroke="#6C3483" stroke-width="2" rx="8"/>
+  <text x="415" y="475" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    Ingest Pipelines
+  </text>
+  <text x="415" y="495" text-anchor="middle" font-size="11" fill="white">
+    • GeoIP Processor
+  </text>
+  <text x="415" y="512" text-anchor="middle" font-size="11" fill="white">
+    • Date Processor
+  </text>
+  <text x="415" y="529" text-anchor="middle" font-size="11" fill="white">
+    • Remove Processor
+  </text>
+  
+  <rect x="550" y="450" width="220" height="100" fill="#8E44AD" stroke="#6C3483" stroke-width="2" rx="8"/>
+  <text x="660" y="475" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    Index Templates
+  </text>
+  <text x="660" y="495" text-anchor="middle" font-size="11" fill="white">
+    • تعريف المخططات
+  </text>
+  <text x="660" y="512" text-anchor="middle" font-size="11" fill="white">
+    • إعدادات الفهرسة
+  </text>
+  <text x="660" y="529" text-anchor="middle" font-size="11" fill="white">
+    • قواعد التطبيق التلقائي
+  </text>
+  
+  <!-- Storage Layer -->
+  <rect x="50" y="600" width="750" height="130" fill="#16A085" fill-opacity="0.1" stroke="#16A085" stroke-width="3" rx="10"/>
+  <text x="425" y="625" text-anchor="middle" font-size="18" font-weight="bold" fill="#16A085">
+    طبقة التخزين والتوزيع
+  </text>
+  
+  <rect x="80" y="640" width="220" height="70" fill="#138D75" stroke="#0E6655" stroke-width="2" rx="8"/>
+  <text x="190" y="665" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    Sharding
+  </text>
+  <text x="190" y="685" text-anchor="middle" font-size="11" fill="white">
+    توزيع أفقي للبيانات
+  </text>
+  <text x="190" y="700" text-anchor="middle" font-size="11" fill="white">
+    Consistent Hashing
+  </text>
+  
+  <rect x="325" y="640" width="200" height="70" fill="#138D75" stroke="#0E6655" stroke-width="2" rx="8"/>
+  <text x="425" y="665" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    Replication
+  </text>
+  <text x="425" y="685" text-anchor="middle" font-size="11" fill="white">
+    نسخ متعددة للبيانات
+  </text>
+  <text x="425" y="700" text-anchor="middle" font-size="11" fill="white">
+    مزامنة تلقائية
+  </text>
+  
+  <rect x="550" y="640" width="220" height="70" fill="#138D75" stroke="#0E6655" stroke-width="2" rx="8"/>
+  <text x="660" y="665" text-anchor="middle" font-size="14" font-weight="bold" fill="white">
+    Distributed Storage
+  </text>
+  <text x="660" y="685" text-anchor="middle" font-size="11" fill="white">
+    تخزين موزع على العقد
+  </text>
+  <text x="660" y="700" text-anchor="middle" font-size="11" fill="white">
+    /var/lib/wazuh-indexer
+  </text>
+</svg>
