@@ -18,7 +18,7 @@ Wazuh Indexer employs a data distribution mechanism using shards, which are inde
 
 In addition to primary shards, the system supports creating replicas of each shard, ensuring operational continuity in case of node failure within the cluster. These replicas are distributed across different nodes to prevent data loss and achieve high availability.
 
-![Wazuh Indexer Cluster Architecture](https://raw.githubusercontent.com/Rasheed1506993/wazuh_lab/main/media/wazuh_indexer_cluster_en.svg)
+![Wazuh Indexer Cluster Architecture](https://raw.githubusercontent.com/Rasheed1506993/wazuh_lab/main/media/wazuh_indexer_cluster.svg)
 
 ## Internal Operating Mechanism of the Indexer
 
