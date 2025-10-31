@@ -1,0 +1,197 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#2C3E50">
+    Index Patterns and Their Functions in Wazuh Indexer
+  </text>
+  
+  <!-- Alert Indices -->
+  <rect x="50" y="70" width="380" height="130" fill="#E74C3C" fill-opacity="0.15" stroke="#E74C3C" stroke-width="3" rx="10"/>
+  <text x="240" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#C0392B">
+    wazuh-alerts-*
+  </text>
+  <text x="80" y="120" font-size="13" fill="#2C3E50">
+    • Security alerts generated from rules
+  </text>
+  <text x="80" y="140" font-size="13" fill="#2C3E50">
+    • New daily index created automatically
+  </text>
+  <text x="80" y="160" font-size="13" fill="#2C3E50">
+    • Example: wazuh-alerts-4.x-2025.10.31
+  </text>
+  <text x="80" y="180" font-size="13" fill="#2C3E50">
+    • Source: /var/ossec/logs/alerts/alerts.json
+  </text>
+  
+  <!-- Archive Indices -->
+  <rect x="470" y="70" width="380" height="130" fill="#F39C12" fill-opacity="0.15" stroke="#F39C12" stroke-width="3" rx="10"/>
+  <text x="660" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#D68910">
+    wazuh-archives-*
+  </text>
+  <text x="500" y="120" font-size="13" fill="#2C3E50">
+    • All received events (optional)
+  </text>
+  <text x="500" y="140" font-size="13" fill="#2C3E50">
+    • Requires enabling &lt;logall_json&gt;yes&lt;/logall_json&gt;
+  </text>
+  <text x="500" y="160" font-size="13" fill="#2C3E50">
+    • Useful for compliance and post-analysis
+  </text>
+  <text x="500" y="180" font-size="13" fill="#2C3E50">
+    • Significantly increases storage requirements
+  </text>
+  
+  <!-- Monitoring Indices -->
+  <rect x="50" y="230" width="380" height="130" fill="#3498DB" fill-opacity="0.15" stroke="#3498DB" stroke-width="3" rx="10"/>
+  <text x="240" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="#2980B9">
+    wazuh-monitoring-*
+  </text>
+  <text x="80" y="280" font-size="13" fill="#2C3E50">
+    • Wazuh agent connection status
+  </text>
+  <text x="80" y="300" font-size="13" fill="#2C3E50">
+    • Logged every 15 minutes (default)
+  </text>
+  <text x="80" y="320" font-size="13" fill="#2C3E50">
+    • Weekly index created
+  </text>
+  <text x="80" y="340" font-size="13" fill="#2C3E50">
+    • Statuses: Active, Disconnected, Pending
+  </text>
+  
+  <!-- Statistics Indices -->
+  <rect x="470" y="230" width="380" height="130" fill="#9B59B6" fill-opacity="0.15" stroke="#9B59B6" stroke-width="3" rx="10"/>
+  <text x="660" y="255" text-anchor="middle" font-size="16" font-weight="bold" fill="#8E44AD">
+    wazuh-statistics-*
+  </text>
+  <text x="500" y="280" font-size="13" fill="#2C3E50">
+    • Wazuh server performance statistics
+  </text>
+  <text x="500" y="300" font-size="13" fill="#2C3E50">
+    • Number of processed and dropped events
+  </text>
+  <text x="500" y="320" font-size="13" fill="#2C3E50">
+    • Bytes received and TCP sessions
+  </text>
+  <text x="500" y="340" font-size="13" fill="#2C3E50">
+    • Updated every 5 minutes, weekly index
+  </text>
+  
+  <!-- Vulnerabilities Indices -->
+  <rect x="50" y="390" width="800" height="100" fill="#E67E22" fill-opacity="0.15" stroke="#E67E22" stroke-width="3" rx="10"/>
+  <text x="450" y="415" text-anchor="middle" font-size="16" font-weight="bold" fill="#CA6F1E">
+    wazuh-states-vulnerabilities-*
+  </text>
+  <text x="80" y="440" font-size="13" fill="#2C3E50">
+    • Security vulnerabilities discovered in monitored systems
+  </text>
+  <text x="80" y="460" font-size="13" fill="#2C3E50">
+    • Details: Severity level, status, affected software, CVE references
+  </text>
+  <text x="80" y="480" font-size="13" fill="#2C3E50">
+    • Used in vulnerability detection module and security reports
+  </text>
+  
+  <!-- Inventory Title -->
+  <text x="450" y="525" text-anchor="middle" font-size="18" font-weight="bold" fill="#16A085">
+    Inventory Indices
+  </text>
+  
+  <!-- Hardware Inventory -->
+  <rect x="50" y="550" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="175" y="572" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-hardware-*
+  </text>
+  <text x="75" y="595" font-size="12" fill="#2C3E50">
+    Physical component information
+  </text>
+  <text x="75" y="612" font-size="12" fill="#2C3E50">
+    (CPU, Memory)
+  </text>
+  <text x="75" y="629" font-size="12" fill="#2C3E50">
+    Location: IT Hygiene → Hardware
+  </text>
+  
+  <!-- Packages Inventory -->
+  <rect x="325" y="550" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="450" y="572" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-packages-*
+  </text>
+  <text x="350" y="595" font-size="12" fill="#2C3E50">
+    Installed software
+  </text>
+  <text x="350" y="612" font-size="12" fill="#2C3E50">
+    (Name, Version, Vendor)
+  </text>
+  <text x="350" y="629" font-size="12" fill="#2C3E50">
+    Location: IT Hygiene → Packages
+  </text>
+  
+  <!-- Processes Inventory -->
+  <rect x="600" y="550" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="725" y="572" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-processes-*
+  </text>
+  <text x="625" y="595" font-size="12" fill="#2C3E50">
+    Running processes
+  </text>
+  <text x="625" y="612" font-size="12" fill="#2C3E50">
+    (Name, PID, User)
+  </text>
+  <text x="625" y="629" font-size="12" fill="#2C3E50">
+    Location: IT Hygiene → Processes
+  </text>
+  
+  <!-- Ports Inventory -->
+  <rect x="50" y="660" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="175" y="682" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-ports-*
+  </text>
+  <text x="75" y="705" font-size="12" fill="#2C3E50">
+    Open network ports
+  </text>
+  <text x="75" y="722" font-size="12" fill="#2C3E50">
+    (Port number, Service)
+  </text>
+  <text x="75" y="739" font-size="12" fill="#2C3E50">
+    Location: IT Hygiene → Traffic
+  </text>
+  
+  <!-- Interfaces Inventory -->
+  <rect x="325" y="660" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="450" y="682" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-interfaces-*
+  </text>
+  <text x="350" y="705" font-size="12" fill="#2C3E50">
+    Network interfaces
+  </text>
+  <text x="350" y="722" font-size="12" fill="#2C3E50">
+    (Status, MAC, Statistics)
+  </text>
+  <text x="350" y="739" font-size="12" fill="#2C3E50">
+    Location: IT Hygiene → Interfaces
+  </text>
+  
+  <!-- System Inventory -->
+  <rect x="600" y="660" width="250" height="90" fill="#16A085" fill-opacity="0.15" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="725" y="682" text-anchor="middle" font-size="14" font-weight="bold" fill="#138D75">
+    inventory-system-*
+  </text>
+  <text x="625" y="705" font-size="12" fill="#2C3E50">
+    System information
+  </text>
+  <text x="625" y="722" font-size="12" fill="#2C3E50">
+    (OS, Architecture)
+  </text>
+  <text x="625" y="739" font-size="12" fill="#2C3E50">
+    Location: IT Hygiene → OS
+  </text>
+  
+  <!-- Note box -->
+  <rect x="50" y="770" width="800" height="60" fill="#ECF0F1" stroke="#34495E" stroke-width="2" rx="8"/>
+  <text x="450" y="795" text-anchor="middle" font-size="14" font-weight="bold" fill="#2C3E50">
+    Important Notes
+  </text>
+  <text x="70" y="815" font-size="12" fill="#2C3E50">
+    • The * symbol allows creating multiple indices based on time or other factors
+  </text>
+</svg>

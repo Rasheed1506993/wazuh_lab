@@ -1,0 +1,160 @@
+<svg viewBox="0 0 900 950" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-size="22" font-weight="bold" fill="#2C3E50">
+    Security and Maintenance in Wazuh Indexer
+  </text>
+  
+  <!-- Security Layer -->
+  <rect x="50" y="70" width="800" height="270" fill="#E74C3C" fill-opacity="0.08" stroke="#E74C3C" stroke-width="3" rx="10"/>
+  <text x="450" y="95" text-anchor="middle" font-size="19" font-weight="bold" fill="#C0392B">
+    Security Layers
+  </text>
+  
+  <!-- Encryption -->
+  <rect x="80" y="115" width="370" height="100" fill="#C0392B" fill-opacity="0.15" stroke="#C0392B" stroke-width="2" rx="8"/>
+  <text x="265" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21">
+    Encryption & Certificate Management
+  </text>
+  <text x="100" y="160" font-size="11" fill="#2C3E50">
+    • HTTPS mandatory for all communications (TLS 1.2+)
+  </text>
+  <text x="100" y="178" font-size="11" fill="#2C3E50">
+    • X.509 certificates in: /etc/wazuh-indexer/certs/
+  </text>
+  <text x="100" y="196" font-size="11" fill="#2C3E50">
+    • Support for Mutual TLS authentication
+  </text>
+  
+  <!-- Authentication -->
+  <rect x="470" y="115" width="360" height="100" fill="#C0392B" fill-opacity="0.15" stroke="#C0392B" stroke-width="2" rx="8"/>
+  <text x="650" y="138" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21">
+    Identity & Permissions Management
+  </text>
+  <text x="490" y="160" font-size="11" fill="#2C3E50">
+    • RBAC model (Role-Based Access Control)
+  </text>
+  <text x="490" y="178" font-size="11" fill="#2C3E50">
+    • Password encryption with bcrypt
+  </text>
+  <text x="490" y="196" font-size="11" fill="#2C3E50">
+    • Integration with LDAP/SAML/OpenID Connect
+  </text>
+  
+  <!-- Data Protection -->
+  <rect x="80" y="230" width="740" height="95" fill="#C0392B" fill-opacity="0.15" stroke="#C0392B" stroke-width="2" rx="8"/>
+  <text x="450" y="253" text-anchor="middle" font-size="15" font-weight="bold" fill="#922B21">
+    Data Protection
+  </text>
+  <text x="100" y="275" font-size="11" fill="#2C3E50">
+    In Transit: TLS encryption for all communications (external and internal between nodes)
+  </text>
+  <text x="100" y="293" font-size="11" fill="#2C3E50">
+    At Rest: Optional disk-level encryption (LUKS/BitLocker)
+  </text>
+  <text x="100" y="311" font-size="11" fill="#2C3E50">
+    Location: /var/lib/wazuh-indexer/nodes/0/indices
+  </text>
+  
+  <!-- Monitoring Section -->
+  <rect x="50" y="370" width="800" height="240" fill="#3498DB" fill-opacity="0.08" stroke="#3498DB" stroke-width="3" rx="10"/>
+  <text x="450" y="395" text-anchor="middle" font-size="19" font-weight="bold" fill="#2980B9">
+    Monitoring & Maintenance
+  </text>
+  
+  <!-- Health Monitoring -->
+  <rect x="80" y="415" width="370" height="180" fill="#2980B9" fill-opacity="0.15" stroke="#2980B9" stroke-width="2" rx="8"/>
+  <text x="265" y="438" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F618D">
+    System Health Monitoring
+  </text>
+  <text x="100" y="460" font-size="11" fill="#2C3E50" font-weight="bold">
+    /_cluster/health endpoint
+  </text>
+  <text x="110" y="478" font-size="10" fill="#27AE60">
+    • Green: All shards active
+  </text>
+  <text x="110" y="495" font-size="10" fill="#F39C12">
+    • Yellow: Some replicas unavailable
+  </text>
+  <text x="110" y="512" font-size="10" fill="#E74C3C">
+    • Red: Some primary shards unavailable
+  </text>
+  
+  <text x="100" y="535" font-size="11" fill="#2C3E50" font-weight="bold">
+    /_nodes/stats endpoint
+  </text>
+  <text x="110" y="553" font-size="10" fill="#2C3E50">
+    Memory usage, CPU, disk, network
+  </text>
+  <text x="100" y="575" font-size="10" fill="#C0392B">
+    ⚠ Alert when disk usage > 80%
+  </text>
+  
+  <!-- Index Management -->
+  <rect x="470" y="415" width="360" height="180" fill="#2980B9" fill-opacity="0.15" stroke="#2980B9" stroke-width="2" rx="8"/>
+  <text x="650" y="438" text-anchor="middle" font-size="15" font-weight="bold" fill="#1F618D">
+    Index Lifecycle Management
+  </text>
+  <text x="490" y="460" font-size="11" fill="#2C3E50">
+    Data retention policies:
+  </text>
+  <text x="500" y="480" font-size="10" fill="#2C3E50">
+    • wazuh-alerts-*: 90 days (recommended)
+  </text>
+  <text x="500" y="497" font-size="10" fill="#2C3E50">
+    • wazuh-monitoring-*: 30 days
+  </text>
+  <text x="500" y="514" font-size="10" fill="#2C3E50">
+    • wazuh-statistics-*: 30 days
+  </text>
+  <text x="500" y="531" font-size="10" fill="#2C3E50">
+    • wazuh-states-inventory-*: 30 days
+  </text>
+  
+  <text x="490" y="555" font-size="11" fill="#2C3E50">
+    Automatic deletion via scheduled tasks
+  </text>
+  <text x="490" y="575" font-size="10" fill="#2C3E50">
+    DELETE /wazuh-alerts-*/_doc/_query
+  </text>
+  
+  <!-- Backup Section -->
+  <rect x="50" y="640" width="800" height="180" fill="#9B59B6" fill-opacity="0.08" stroke="#9B59B6" stroke-width="3" rx="10"/>
+  <text x="450" y="665" text-anchor="middle" font-size="19" font-weight="bold" fill="#8E44AD">
+    Backup & Recovery
+  </text>
+  
+  <!-- Snapshots -->
+  <rect x="80" y="685" width="740" height="120" fill="#8E44AD" fill-opacity="0.15" stroke="#8E44AD" stroke-width="2" rx="8"/>
+  <text x="450" y="708" text-anchor="middle" font-size="15" font-weight="bold" fill="#6C3483">
+    Snapshots Mechanism
+  </text>
+  
+  <text x="100" y="730" font-size="11" fill="#2C3E50">
+    1. Create snapshot repository:
+  </text>
+  <text x="115" y="748" font-size="10" fill="#2C3E50">
+    PUT /_snapshot/backup_repo {"type": "fs", "settings": {"location": "/backup/wazuh-indexer"}}
+  </text>
+  
+  <text x="100" y="770" font-size="11" fill="#2C3E50">
+    2. Create snapshot:
+  </text>
+  <text x="115" y="788" font-size="10" fill="#2C3E50">
+    PUT /_snapshot/backup_repo/snapshot_1?wait_for_completion=true
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="50" y="850" width="800" height="85" fill="#16A085" fill-opacity="0.1" stroke="#16A085" stroke-width="2" rx="8"/>
+  <text x="450" y="873" text-anchor="middle" font-size="16" font-weight="bold" fill="#138D75">
+    Maintenance Best Practices
+  </text>
+  <text x="70" y="895" font-size="11" fill="#2C3E50">
+    • Monitor logs at: /var/log/wazuh-indexer/wazuh-indexer.log
+  </text>
+  <text x="70" y="913" font-size="11" fill="#2C3E50">
+    • Daily backup for critical indices, weekly for other indices
+  </text>
+  <text x="70" y="931" font-size="11" fill="#2C3E50">
+    • Periodic review of permissions and users, update certificates before expiration
+  </text>
+</svg>
